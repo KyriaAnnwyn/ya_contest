@@ -1,0 +1,22 @@
+{
+  "name": "yandex-interview",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "testB": "jest /B/index.test.js --watch",
+    "testC": "jest /C/index.test.js --watch",
+    "testH": "jest /H/index.test.js --watch",
+    "testI": "jest /I/index.test.js --watch",
+    "testJ": "jest /J/index.test.js --watch",
+    "testK": "jest /K/index.test.js --watch"
+  },
+  "author": "Alexander Rzhanitsyn",
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
