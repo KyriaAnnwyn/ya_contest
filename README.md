@@ -1,3 +1,5 @@
+ссылка на исходный проект [https://github.com/feeedback/yandex-interview-contest](https://github.com/feeedback/yandex-interview-contest)
+
 ## Яндекс.Контест. Подготовка к собеседованию
 
 Мои решения задач [Подготовка к собеседованию от Яндекса](https://contest.yandex.ru/contest/8458), на языке JavaScript.
