@@ -1,5 +1,5 @@
 const { withMap, withObj } = require("./index");
-
+// Убрать вложенность массива, используя стек.
 const testData = [
   [
     ["abc", "acb", "asd", "sda", "dsa", "gfd"],
