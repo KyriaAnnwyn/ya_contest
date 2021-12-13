@@ -1,5 +1,5 @@
 const { stackUseFlat, recursiveFlat } = require("./index");
-
+// Убрать вложенность массива, используя стек.
 const testData = [
   [
     [1, 2, 3, [4, 5, [6]], 7, 8],
