@@ -1,5 +1,8 @@
 const fn = require("./index");
 
+// Отсортировать билеты по следованию маршруда
+// A,B -> B,C -> C,B
+
 const testData = [
   [
     [
