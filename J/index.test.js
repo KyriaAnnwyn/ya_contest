@@ -1,5 +1,6 @@
 const { withMap, withObj } = require("./index");
 // Сгруппировать анаграммы
+// использование map,set
 const testData = [
   [
     ["abc", "acb", "asd", "sda", "dsa", "gfd"],
