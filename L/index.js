@@ -1,40 +1,14 @@
-module.exports = {
-  stackUseFlat,
-  recursiveFlat,
-};
-
-function recursiveFlat([first, ...tail]) {
-  if (first === undefined) return [];
-  if (tail.length) {
-    return Array.isArray(first)
-      ? [...first, ...recursiveFlat(tail)]
-      : [first].concat(...recursiveFlat(tail));
-  } else {
-    return [first];
-  }
-}
-
-function stackUseFlat(arr) {
-  const result = [];
-  const stack = [];
-  for (let index = 0; index < arr.length; index++) {
-    const el = arr[index];
-    if (Array.isArray(el)) {
-      stack.push(el);
+module.exports = function (vector) {
+  let result = 0;
+  let currMax = 0;
+  const TARGET_NUM = "1";
+  for (let i = 0; i < vector.length; i++) {
+    if (vector[i] === TARGET_NUM) {
+      currMax++;
+      if (currMax > result) result = currMax;
     } else {
-      result.push(el);
-    }
-    while (stack.length) {
-      let stackEl = stack.pop();
-      if (Array.isArray(stackEl)) {
-        for (let index = stackEl.length; index--; ) {
-          const element = stackEl[index];
-          stack.push(element);
-        }
-      } else {
-        result.push(stackEl);
-      }
+      currMax = 0;
     }
   }
   return result;
-}
+};
